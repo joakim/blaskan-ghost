@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html id="blaskan" class="no-js iem7"><![endif]-->
+<!--[if lt IE 7 ]><html id="blaskan" class="no-js ie6"><![endif]-->
+<!--[if IE 7 ]><html id="blaskan" class="no-js ie7"><![endif]-->
+<!--[if IE 8 ]><html id="blaskan" class="no-js ie8"><![endif]-->
+<!--[if IE 9 ]><html id="blaskan" class="no-js ie9"><![endif]-->
+<!--[if (gt IE 9)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html id="blaskan" class="no-js"><!--<![endif]-->
+<head>
+    <meta charset="UTF-8">
+    <title>{{meta_title}}</title>
+
+    <link rel="stylesheet" type="text/css" href="/assets/css/framework.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/font.css" />
+
+    <script type="text/javascript" src="/assets/js/libs/modernizr.min.js?ver=3.4.1"></script>
+
+    {{ghost_head}}
+</head>
+<body class="{{body_class}}">
+
+<div id="site">
+    <div id="wrapper">
+
+        {{{body}}}
+
+        <footer id="footer">
+            <nav id="footer-nav" role="navigation">
+                <ul class="menu">
+                    <li><a href="{{@blog.url}}/rss/">Subscribe with RSS</a></li>
+                    <li><a href="{{@blog.url}}/ghost/">Log in</a></li>
+                </ul>
+            </nav>
+            <div id="footer-info">
+                <section id="footer-message">
+                    All content copyright <a href="/">{{@blog.title}}</a> &copy; {{date format="YYYY"}} &mdash; All rights reserved.
+                </section>
+                <section id="footer-credits">
+                    Proudly published with <a class="icon-ghost" href="http://ghost.org">Ghost</a> and <a href="http://www.blaskan.net/">Blaskan</a>
+                </section>
+            </div>
+        </footer>
+        {{! / #footer }}
+    </div>
+    {{! / #wrapper }}
+</div>
+{{! / #site }}
+
+{{! Ghost outputs important scripts and data with this tag }}
+{{ghost_foot}}
+
+<script type="text/javascript" src="/assets/js/libs/jquery.min.js?ver=1.7.2"></script>
+<script type="text/javascript" src="/assets/js/libs/jquery.fitvids.js?ver=3.4.1"></script>
+<script type="text/javascript" src="/assets/js/mylibs/helper.js?ver=3.4.1"></script>
+<script type="text/javascript" src="/assets/js/script.js?ver=3.4.1"></script>
+
+<script>
+MBP.scaleFix();
+MBP.hideUrlBar();
+</script>
+<!--[if (lt IE 9) & (!IEMobile)]>
+<script type="text/javascript" src="/assets/js/libs/selectivizr.1.0.3b.js"></script>
+<script type="text/javascript" src="/assets/js/libs/respond.min.js"></script>
+<![endif]-->
+
+</body>
+</html>
