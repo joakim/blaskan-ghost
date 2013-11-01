@@ -9,24 +9,15 @@ Blaskan supports:
 * Three extra areas (left sidebar, right sidebar, footer)
 * Wide content column. Useful for e.g. photo blogs.
 
-## Extending
-
-If you need to do any customizations that require modifying the code then please
-use a child theme. Get started using the Blaskan child theme boilerplate.
-
-Source code:
-http://bit.ly/blaskanchild
-
-Download:
-http://bit.ly/blaskanchilddownload
-
-## Supported browsers and platforms
+## Supported browsers
 
 * Chrome
 * Firefox
 * Safari
 * Opera
-* Internet Explorer 7 and above
+* Internet Explorer 7 and later
+
+Mobile:
 
 * Android
 * Mobile Safari (iPhone/iPad/iPod touch)
@@ -34,10 +25,10 @@ http://bit.ly/blaskanchilddownload
 
 ## Typography
 
-League Gothic from The League of Moveable Type:
+League Gothic from The League of Moveable Type:  
 http://www.theleagueofmoveabletype.com/fonts/7-league-gothic
 
-Licensed under the Open Font License. See OFL.txt.
+Licensed under the Open Font License. See OFL.txt, or:  
 http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL
 
 ## Copyright and license
