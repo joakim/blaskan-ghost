@@ -1,0 +1,9 @@
+<header id="header" role="banner">
+    {{#if @blog.cover}}
+        <figure><a href="{{@blog.url}}" title="{{@blog.title}}" rel="home"><img src="{{@blog.cover}}" alt="Blog cover"></a></figure>
+    {{/if}}
+
+    <h1 id="site-name"><a href="{{@blog.url}}" title="{{@blog.title}}" rel="home">{{@blog.title}}</a></h1>
+    <div id="header-message">{{@blog.description}}</div>
+</header>
+<!-- / #header -->

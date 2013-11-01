@@ -3,15 +3,7 @@
 {{! The comment above "< default" means - insert everything in this file into
     the {body} of the default.hbs template, which contains our header/footer. }}
 
-<header id="header" role="banner">
-    {{#if @blog.cover}}
-        <figure><a href="{{@blog.url}}" title="{{@blog.title}}" rel="home"><img src="{{@blog.cover}}" alt="Blog cover"></a></figure>
-    {{/if}}
-
-    <h1 id="site-name"><a href="{{@blog.url}}" title="{{@blog.title}}" rel="home">{{@blog.title}}</a></h1>
-    <div id="header-message">{{@blog.description}}</div>
-</header>
-{{! / #header }}
+{{> header}}
 
 <section id="content" role="main">
 
@@ -33,16 +25,8 @@
             </div>
             <!-- / .content -->
 
-            <footer>
-                <span class="author">
-                    <span class="author-label">Written by</span>
-                    {{author.name}}
-                </span>
-                <span class="tags">
-                    <span class="tags-labels">Tagged with</span>
-                    {{tags separator=", "}}
-                </span>
-            </footer>
+            {{> article-footer}}
+
         </article>
         <!-- / article -->
 
